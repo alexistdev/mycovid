@@ -220,13 +220,14 @@
 						android:layout_height="wrap_content"
 						android:src="@drawable/berita"
 						android:contentDescription="@string/berita_informasi"/>
-					<TextView
-						android:layout_width="match_parent"
-						android:layout_height="wrap_content"
-						android:text="@string/berita_informasi"
-						android:layout_marginTop="8dp"
-						android:textColor="@color/black"/>
-				</LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/berita_informasi"
+                        android:textColor="@color/black" />
+                </LinearLayout>
 			</androidx.cardview.widget.CardView>
 
 		</LinearLayout>

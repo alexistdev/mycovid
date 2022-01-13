@@ -32,11 +32,11 @@
                         <li class="nav-header">MASTER DATA</li>
 
                         <li class="nav-item">
-                            <a href=""
-                               class="nav-link {{($tagSubMenu == 'kategori')?"active":"";}}">
+                            <a href="{{route('admin.penyakit')}}"
+                               class="nav-link {{($tagSubMenu == 'penyakit')?"active":"";}}">
                                 <i class="nav-icon fa fa-clipboard-list"></i>
                                 <p>
-                                    DATA KATEGORI
+                                    DATA PENYAKIT
                                 </p>
                             </a>
                         </li>

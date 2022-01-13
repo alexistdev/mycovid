@@ -21,8 +21,7 @@ import retrofit2.http.POST;
 public interface APIService {
 	/* Otentikasi Login */
 	@FormUrlEncoded
-	@Headers({"x-api-key: t72HB3ETEqjvRP2292K5wAWs7MPqY54S"})
-	@POST("api/auth")
+	@POST("api/login")
 	Call<UserModel> cekLogin(@Field("email") String email,
 							 @Field("password") String password);
 

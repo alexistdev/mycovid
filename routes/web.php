@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Admin\{DashboardController as DashAdmin};
+use App\Http\Controllers\Admin\{DashboardController as DashAdmin,PenyakitController as PenyAdmin};
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +23,13 @@ Route::get('/dashboard', function () {
 Route::group(['middleware' => ['web','auth','roles']],function() {
     Route::group(['roles' => 'admin'], function () {
         Route::get('/admin/dashboard', [DashAdmin::class, 'index'])->name('admin.dashboard');
+
+        Route::get('/admin/penyakit', [PenyAdmin::class, 'index'])->name('admin.penyakit');
+        Route::post('/admin/penyakit', [PenyAdmin::class, 'store'])->name('admin.savepenyakit');
+        Route::patch('/admin/penyakit', [PenyAdmin::class, 'update'])->name('admin.updatepenyakit');
+        Route::delete('/admin/penyakit', [PenyAdmin::class, 'destroy'])->name('admin.deletepenyakit');
+        Route::get('/admin/penyakit/add', [PenyAdmin::class, 'create'])->name('admin.addpenyakit');
+        Route::get('/admin/penyakit/{id}/edit', [PenyAdmin::class, 'edit'])->name('admin.editpenyakit');
     });
 });
 

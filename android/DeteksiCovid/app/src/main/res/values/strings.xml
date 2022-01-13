@@ -42,7 +42,7 @@
     <string name="jadwal">Jadwal Vaksin</string>
     <string name="daftar_vaksin">Daftar Vaksin</string>
     <string name="deteksi_covid">Deteksi Covid</string>
-    <string name="berita_informasi">Berita dan Informasi</string>
+    <string name="berita_informasi">Informasi</string>
 
     <!-- Fragment_Akun	-->
     <string name="dtl_akun">Detail Akun :</string>

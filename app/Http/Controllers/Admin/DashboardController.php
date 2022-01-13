@@ -24,7 +24,7 @@ class DashboardController extends Controller
     public function index(Request $request)
     {
         return view('admin.dashboard',array(
-            'judul' => "Dashboard Administrator | MYMARKET V.1.0",
+            'judul' => "Dashboard Administrator | MyCovid V.1.0",
             'aktifTag' => "admin",
             'tagSubMenu' => "admin",
         ));
