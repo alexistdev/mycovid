@@ -5,7 +5,7 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1>Blank Page</h1>
+                        <h1>Dashboard</h1>
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
@@ -26,13 +26,7 @@
                     <h3 class="card-title">Dashboard</h3>
                 </div>
                 <div class="card-body">
-                    Dipersembahkan oleh:<br>
-                    <ol>
-                        <li>Aldo Gilar Visitama</li>
-                        <li>Apria Andika</li>
-                        <li>Febby Wahyu Irawan</li>
-                        <li>Apriyansah</li>
-                    </ol>
+                   I love Laravel
                 </div>
                 <!-- /.card-body -->
                 <div class="card-footer">
