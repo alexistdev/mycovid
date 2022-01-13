@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BeritaActivity"
+	android:orientation="vertical"
+	android:layout_marginStart="20dp"
+	android:layout_marginEnd="20dp"
+	android:layout_marginTop="30dp"
+	android:layout_marginBottom="30dp">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Berita Terkini"
+		android:textAlignment="center"
+		android:textColor="@color/biru3"
+		android:textSize="24sp"
+		android:layout_marginBottom="4dp"
+		/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_marginBottom="4dp"
+		android:background="@drawable/bg_berita"
+		android:elevation="4dp"
+		android:padding="4dp"
+		>
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:src="@drawable/img_berita"
+			android:layout_marginBottom="4dp"
+			android:layout_marginTop="4dp"
+			/>
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="22sp"
+			android:textColor="@color/black"
+			android:text="Judul"
+			android:textStyle="bold"
+			android:layout_marginStart="10dp"
+			android:layout_marginEnd="10dp"/>
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="20sp"
+			android:textColor="@color/black"
+			android:text="isi berita"
+			android:layout_marginStart="10dp"
+			android:layout_marginEnd="10dp"/>
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="senin, 20 maret 2021"
+			android:textSize="10sp"
+			android:textStyle="italic"
+			android:layout_marginStart="10dp"
+			/>
+	</LinearLayout>
+
+	<ListView
+		android:id="@+id/list_berita"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		/>
+
+</LinearLayout>

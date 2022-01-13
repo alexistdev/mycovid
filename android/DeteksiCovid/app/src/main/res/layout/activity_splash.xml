@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/splash1"
+	tools:context=".SplashActivity">
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+		<ImageView
+			android:layout_width="90dp"
+			android:layout_height="90dp"
+			android:src="@drawable/ic_splash"
+			android:background="@drawable/bg_ic_splash"
+			android:layout_gravity="center_horizontal"
+			android:contentDescription="@string/ctDescription"
+			/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:fontFamily="serif"
+			android:text="@string/app_name"
+			android:layout_gravity="center"
+			android:textAlignment="center"
+			android:textColor="@color/white"
+			android:textSize="36sp" />
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/splash1"
+			android:layout_gravity="center"
+			android:textColor="@color/white" />
+	</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

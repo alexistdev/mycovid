@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Akun_fragment"
+	android:background="@color/white"
+	android:padding="25dp">
+
+   <LinearLayout
+	   android:layout_width="match_parent"
+	   android:layout_height="wrap_content"
+	   android:background="@color/biru1"
+	   android:orientation="vertical"
+	   android:padding="25dp"
+	   android:gravity="center">
+
+	   <ImageView
+		   android:id="@+id/img_akun"
+		   android:layout_width="120dp"
+		   android:layout_height="120dp"
+		   android:contentDescription="@string/gmbr"
+		   android:src="@drawable/akun"
+		   tools:ignore="ImageContrastCheck" />
+
+
+		   <TextView
+			   android:layout_width="match_parent"
+			   android:layout_height="1dp"
+			   android:layout_marginTop="10dp"
+			   android:background="@color/white"
+			   android:layout_marginStart="10dp"
+			   android:layout_marginEnd="10dp"
+			   />
+
+	   <TextView
+		   android:layout_width="wrap_content"
+		   android:layout_height="wrap_content"
+		   android:layout_marginTop="10dp"
+		   android:text="@string/dtl_akun"
+		   android:textColor="#6D4C41"
+		   android:textSize="20sp"
+		   android:textStyle="bold" />
+
+		   <!--  garis pembatas	-->
+	   <TextView
+		   android:id="@+id/nama_akun"
+		   android:layout_width="wrap_content"
+		   android:layout_height="wrap_content"
+		   android:layout_marginTop="5dp"
+		   android:text="@string/nama_akun"
+		   android:textColor="#4E342E"
+		   android:textSize="18sp" />
+
+	   <TextView
+		   android:id="@+id/telp_akun"
+		   android:layout_width="wrap_content"
+		   android:layout_height="wrap_content"
+		   android:text="@string/telp_akun"
+		   android:textColor="#4E342E"
+		   android:textSize="18sp" />
+
+	   <TextView
+		   android:id="@+id/email_akun"
+		   android:layout_width="wrap_content"
+		   android:layout_height="wrap_content"
+		   android:text="@string/email_akun"
+		   android:textColor="#4E342E"
+		   android:textSize="18sp" />
+
+		   <!--  garis pembatas	-->
+		   <TextView
+			   android:layout_width="match_parent"
+			   android:layout_height="1dp"
+			   android:layout_marginTop="10dp"
+			   android:background="@color/white"
+			   android:layout_marginStart="10dp"
+			   android:layout_marginEnd="10dp" />
+
+	   <TextView
+		   android:layout_width="wrap_content"
+		   android:layout_height="wrap_content"
+		   android:layout_marginTop="10dp"
+		   android:text="@string/text_alamat"
+		   android:textColor="#6D4C41"
+		   android:textSize="20sp"
+		   android:textStyle="bold" />
+
+	   <TextView
+		   android:id="@+id/alamat_akun"
+		   android:layout_width="wrap_content"
+		   android:layout_height="wrap_content"
+		   android:layout_marginTop="5dp"
+		   android:text="@string/alamat"
+		   android:textColor="#4E342E"
+		   android:textSize="18sp" />
+
+   </LinearLayout>
+
+</FrameLayout>

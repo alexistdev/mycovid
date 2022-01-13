@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">DeteksiCovid</string>
+    <!--	splash -->
+    <string name="splash1">Maskerku melindungi kamu, maskermu melindungi aku</string>
+    <string name="ctDescription">Gambar</string>
+
+    <!-- Login $ Register -->
+    <string name="signin">SIGN IN</string>
+    <string name="first_lgn">First login your account</string>
+    <string name="signup">SIGN UP</string>
+    <string name="please_signup">Please sign up to enter in app</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="nama">Nama Lengkap</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="daftar">Belum punya akun ? Daftar</string>
+    <string name="already">Sudah punya akun ? Login</string>
+
+    <!-- Login $ Register -->
+    <string name="Bantuan">Bantuan</string>
+    <string name="CP">Contact Person Satgas Covid 19</string>
+    <string name="Email">Email</string>
+    <string name="tanda_bagi">:</string>
+    <string name="email_satgas">satgas@mail.com</string>
+    <string name="Telepon">Telepon</string>
+    <string name="telp_satgas">081112112119</string>
+
+
+    <!-- Menu Toolbar	-->
+    <string name="menu1">Home</string>
+    <string name="menu2">Akun</string>
+    <string name="menu3">Vaksin</string>
+    <string name="menu4">Kontak</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Fragment_Home	-->
+    <string name="dashboard">Dashboard</string>
+    <string name="deteksicovid_app">DeteksiCovid App</string>
+    <string name="ic_splash">logo app</string>
+    <string name="my_menu">My Menu :</string>
+    <string name="jadwal">Jadwal Vaksin</string>
+    <string name="daftar_vaksin">Daftar Vaksin</string>
+    <string name="deteksi_covid">Deteksi Covid</string>
+    <string name="berita_informasi">Berita dan Informasi</string>
+
+    <!-- Fragment_Akun	-->
+    <string name="dtl_akun">Detail Akun :</string>
+    <string name="nama_akun">Richo Vernando</string>
+    <string name="telp_akun">08979073353</string>
+    <string name="email_akun">Richo@gmail.com</string>
+    <string name="text_alamat">Alamat</string>
+    <string name="alamat">Jl. ZA. Pagar Alam No.93, gedong meneng</string>
+    <string name="gmbr">gambar akun</string>
+
+	<!-- DAFTAR VAKSIN	-->
+	<string-array name="gelombang_vaksin">
+		<item>Vaksin Gelombang 1</item>
+		<item>Vaksin Gelombang 2</item>
+	</string-array>
+	<string name="daftarvaksin">Daftar Vaksin</string>
+	<string name="notelp">Nomor Telepon</string>
+	<string name="panah">Icon Panah</string>
+	<string name="btn_simpan">Simpan</string>
+
+</resources>

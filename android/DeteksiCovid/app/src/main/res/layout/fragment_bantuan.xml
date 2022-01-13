@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:padding="25dp"
+	android:orientation="vertical"
+	android:background="@color/abu1"
+	tools:context=".fragment.bantuan_fragment">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="400dp"
+		android:orientation="vertical"
+		android:background="@drawable/bg"
+		android:layout_marginTop="25dp"
+		android:padding="25dp">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/Bantuan"
+			android:gravity="center"
+			android:textSize="25sp"
+			android:textColor="@color/black"
+			android:textStyle="bold"
+			android:layout_marginBottom="40dp"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="20sp"
+			android:text="@string/CP"
+			android:textStyle="bold"
+			android:textColor="@color/black"/>
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="@color/black"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_marginTop="10dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/Email"
+				android:textSize="18sp"
+				android:textColor="@color/black"
+				android:layout_weight="1" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/tanda_bagi"
+				android:textColor="@color/black"
+				android:textSize="18sp"
+				android:layout_weight="0.5"/>
+
+			<TextView
+				android:id="@+id/email_satgas"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/email_satgas"
+				android:textColor="@color/black"
+				android:textSize="18sp"
+				android:layout_weight="1.5"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/Telepon"
+				android:textSize="18sp"
+				android:textColor="@color/black"
+				android:layout_weight="1" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/tanda_bagi"
+				android:textColor="@color/black"
+				android:textSize="18sp"
+				android:layout_weight="0.5"/>
+
+			<TextView
+				android:id="@+id/telp_satgas"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/telp_satgas"
+				android:textColor="@color/black"
+				android:textSize="18sp"
+				android:layout_weight="1.5"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</FrameLayout>
+
+

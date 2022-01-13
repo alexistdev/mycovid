@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:background="@color/abu1"
+	android:padding="20dp">
+	<TextView
+		android:id="@+id/txt_signup"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="50dp"
+		android:textSize="30sp"
+		android:textStyle="bold"
+		android:text="@string/signup"/>
+	<TextView
+		android:id="@+id/please_signup"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/txt_signup"
+		android:layout_marginTop="10dp"
+		android:text="@string/please_signup"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="450dp"
+		android:layout_marginTop="150dp"
+		android:background="@drawable/bg"
+		android:orientation="vertical">
+
+		<EditText
+			android:id="@+id/txt_nama"
+			android:layout_marginTop="50dp"
+			android:layout_marginStart="20dp"
+			android:layout_marginEnd="20dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="@string/nama"
+			android:autofillHints="@string/nama"
+			android:inputType="text"/>
+		<EditText
+			android:id="@+id/register_email"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:layout_marginStart="20dp"
+			android:layout_marginEnd="20dp"
+			android:hint="@string/email"
+			android:autofillHints="@string/email"
+			android:inputType="textEmailAddress" />
+		<EditText
+			android:id="@+id/register_password"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:layout_marginStart="20dp"
+			android:layout_marginEnd="20dp"
+			android:hint="@string/password"
+			android:autofillHints="@string/password"
+			android:inputType="textPassword" />
+
+		<Button
+			android:id="@+id/login"
+			android:layout_width="200dp"
+			android:layout_height="50dp"
+			android:layout_marginTop="50dp"
+			android:textColor="@color/white"
+			android:text="@string/register"
+			android:textAllCaps="false"
+			android:background="@drawable/buttonstyle"
+			app:backgroundTint="@color/biru1"
+			android:layout_gravity="center"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/txtPassword"
+			android:text="@string/already"
+			android:layout_marginTop="30dp"
+			android:layout_gravity="center"/>
+	</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/xampp/htdocs/deteksicovid/android/DeteksiCovid/app/src/main/res/drawable/bg_detail_sertifikat.xml" value="0.19282051282051282" />
+        <entry key="..\:/xampp/htdocs/deteksicovid/android/DeteksiCovid/app/src/main/res/drawable/bg_ic_splash.xml" value="0.19282051282051282" />
+        <entry key="..\:/xampp/htdocs/deteksicovid/android/DeteksiCovid/app/src/main/res/drawable/bg_single_list_vaksin.xml" value="0.19583333333333333" />
+        <entry key="..\:/xampp/htdocs/deteksicovid/android/DeteksiCovid/app/src/main/res/drawable/ic_akun.xml" value="0.403125" />
+        <entry key="..\:/xampp/htdocs/deteksicovid/android/DeteksiCovid/app/src/main/res/drawable/ic_contact.xml" value="0.19282051282051282" />
+        <entry key="..\:/xampp/htdocs/deteksicovid/android/DeteksiCovid/app/src/main/res/drawable/ic_home.xml" value="0.403125" />
+        <entry key="..\:/xampp/htdocs/deteksicovid/android/DeteksiCovid/app/src/main/res/drawable/ic_vaksin.xml" value="0.403125" />
+<<<<<<< HEAD
+        <entry key="..\:/xampp/htdocs/deteksicovid/android/DeteksiCovid/app/src/main/res/layout/activity_login.xml" value="0.38697916666666665" />
+=======
+        <entry key="..\:/xampp/htdocs/deteksicovid/android/DeteksiCovid/app/src/main/res/layout/activity_detail_sertifikatvaksin.xml" value="0.22" />
+>>>>>>> d523c70ae885e6264f79697dbac5c164660fac0d
+        <entry key="..\:/xampp/htdocs/deteksicovid/android/DeteksiCovid/app/src/main/res/layout/activity_main.xml" value="0.38697916666666665" />
+        <entry key="..\:/xampp/htdocs/deteksicovid/android/DeteksiCovid/app/src/main/res/layout/activity_register.xml" value="0.38697916666666665" />
+        <entry key="..\:/xampp/htdocs/deteksicovid/android/DeteksiCovid/app/src/main/res/layout/activity_splash.xml" value="0.38697916666666665" />
+        <entry key="..\:/xampp/htdocs/deteksicovid/android/DeteksiCovid/app/src/main/res/layout/fragment_akun.xml" value="0.1796875" />
+        <entry key="..\:/xampp/htdocs/deteksicovid/android/DeteksiCovid/app/src/main/res/layout/fragment_bantuan.xml" value="0.38697916666666665" />
+        <entry key="..\:/xampp/htdocs/deteksicovid/android/DeteksiCovid/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/xampp/htdocs/deteksicovid/android/DeteksiCovid/app/src/main/res/layout/fragment_vaksin.xml" value="0.1796875" />
+        <entry key="..\:/xampp/htdocs/deteksicovid/android/DeteksiCovid/app/src/main/res/layout/singgle_list_vaksin.xml" value="0.22" />
+        <entry key="..\:/xampp/htdocs/deteksicovid/android/DeteksiCovid/app/src/main/res/menu/item_bottom_navigation.xml" value="0.38697916666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
