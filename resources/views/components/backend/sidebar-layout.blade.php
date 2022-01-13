@@ -1,8 +1,8 @@
 <div>
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <!-- Brand Logo -->
-        <a href="../../index3.html" class="brand-link">
-            <img src="../../dist/img/AdminLTELogo.png"
+        <a href="{{route('admin.dashboard')}}" class="brand-link">
+            <img src="{{asset('assets/adminlte/dist/img/AdminLTELogo.png')}}"
                  alt="AdminLTE Logo"
                  class="brand-image img-circle elevation-3"
                  style="opacity: .8">
@@ -14,10 +14,10 @@
             <!-- Sidebar user (optional) -->
             <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                 <div class="image">
-                    <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                    <img src="{{asset('assets/adminlte/dist/img/user2-160x160.jpg')}}" class="img-circle elevation-2" alt="User Image">
                 </div>
                 <div class="info">
-                    <a href="#" class="d-block">Alexander Pierce</a>
+                    <a href="#" class="d-block">Administrator</a>
                 </div>
             </div>
 
@@ -41,10 +41,10 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link {{($tagSubMenu == 'toko')?"active":"";}}">
+                            <a href="{{route('admin.gejala')}}" class="nav-link {{($tagSubMenu == 'gejala')?"active":"";}}">
                                 <i class="nav-icon fa fa-clipboard-list"></i>
                                 <p>
-                                    DATA TOKO
+                                    DATA GEJALA
                                 </p>
                             </a>
                         </li>

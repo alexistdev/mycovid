@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Admin\{DashboardController as DashAdmin,PenyakitController as PenyAdmin};
+use App\Http\Controllers\Admin\{DashboardController as DashAdmin,PenyakitController as PenyAdmin,GejalaController as GejAdmin};
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +23,15 @@ Route::get('/dashboard', function () {
 Route::group(['middleware' => ['web','auth','roles']],function() {
     Route::group(['roles' => 'admin'], function () {
         Route::get('/admin/dashboard', [DashAdmin::class, 'index'])->name('admin.dashboard');
+
+        Route::get('/admin/gejala', [GejAdmin::class, 'index'])->name('admin.gejala');
+        Route::post('/admin/gejala', [GejAdmin::class, 'store'])->name('admin.savegejala');
+        Route::patch('/admin/gejala', [GejAdmin::class, 'update'])->name('admin.updategejala');
+        Route::delete('/admin/gejala', [GejAdmin::class, 'destroy'])->name('admin.deletegejala');
+        Route::get('/admin/gejala/add', [GejAdmin::class, 'create'])->name('admin.addgejala');
+        Route::get('/admin/gejala/{id}/edit', [GejAdmin::class, 'edit'])->name('admin.editgejala');
+
+
 
         Route::get('/admin/penyakit', [PenyAdmin::class, 'index'])->name('admin.penyakit');
         Route::post('/admin/penyakit', [PenyAdmin::class, 'store'])->name('admin.savepenyakit');

@@ -5,13 +5,13 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1>Data Penyakit</h1>
+                        <h1>Data Gejala</h1>
                     </div>
                     <div class="col-sm-6">
                         <x:notify-messages/>
                         <ol class="breadcrumb float-sm-right">
                             <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">Home</a></li>
-                            <li class="breadcrumb-item active">Penyakit</li>
+                            <li class="breadcrumb-item active">Gejala</li>
                         </ol>
                     </div>
                 </div>
@@ -24,8 +24,8 @@
             <!-- Default box -->
             <div class="card card-dark">
                 <div class="card-header">
-                    <h3 class="card-title">Master Data Penyakit</h3>
-                    <a href="{{route('admin.addpenyakit')}}"><button class="btn btn-sm btn-primary float-right"><i class="fas fa-plus"></i> Tambah</button></a>
+                    <h3 class="card-title">Master Data Gejala</h3>
+                    <a href="{{route('admin.addgejala')}}"><button class="btn btn-sm btn-primary float-right"><i class="fas fa-plus"></i> Tambah</button></a>
                 </div>
                 <div class="card-body">
                     <table id="tabelPenyakit" class="table table-bordered table-hover" style="width: 100%">
@@ -33,7 +33,7 @@
                             <tr>
                                 <th>No.</th>
                                 <th>Kode</th>
-                                <th>Nama Penyakit</th>
+                                <th>Nama Gejala</th>
                                 <th>Dibuat</th>
                                 <th>Action</th>
                             </tr>
@@ -56,7 +56,7 @@
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Hapus Data!</h5>
                 </div>
-                <form action="{{route('admin.deletepenyakit')}}" method="post">
+                <form action="{{route('admin.deletegejala')}}" method="post">
                     @csrf
                     @method('delete')
                     <div class="modal-body">
@@ -86,7 +86,7 @@
                 responsive : true,
                 processing: true,
                 serverSide: true,
-                ajax: "{{ route('admin.penyakit') }}",
+                ajax: "{{ route('admin.gejala') }}",
                 columns: [
                     {
                         data: 'index',

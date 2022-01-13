@@ -71,9 +71,22 @@ class PenyakitController extends Controller
             'name' => 'required|unique:penyakits|max:255',
         ]);
 
-        $penyakit = new Penyakit();
-        $penyakit->name = $request->name;
-        $penyakit->save();
+        $dataPenyakit = Penyakit::first();
+        if($dataPenyakit->count() != 0){
+            $dataKode = Penyakit::max('kode');
+            $kode =   (int) filter_var($dataKode, FILTER_SANITIZE_NUMBER_INT);
+            $penyakit = new Penyakit();
+            $penyakit->kode = 'P0' . ($kode + 1);
+            $penyakit->name = $request->name;
+            $penyakit->save();
+        } else {
+            $penyakit = new Penyakit();
+            $penyakit->kode = 'P01';
+            $penyakit->name = $request->name;
+            $penyakit->save();
+        }
+
+
         notify()->success('Anda berhasil menambah data penyakit');
         return redirect(route('admin.penyakit'));
     }
@@ -117,7 +130,5 @@ class PenyakitController extends Controller
         notify()->success('Anda berhasil menghapus data penyakit!');
         return redirect(route('admin.penyakit'));
     }
-
-
 
 }

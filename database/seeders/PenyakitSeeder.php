@@ -18,9 +18,9 @@ class PenyakitSeeder extends Seeder
     {
         $date = Carbon::now()->format('Y-m-d H:i:s');
         $penyakit = array(
-            array('name' => 'covid19','created_at' => $date,'updated_at' => $date),
-            array('name' => 'influenza','created_at' => $date,'updated_at' => $date),
-            array('name' => 'thypoid','created_at' => $date,'updated_at' => $date),
+            array('kode'=> 'P01','name' => 'covid19','created_at' => $date,'updated_at' => $date),
+            array('kode'=> 'P02','name' => 'influenza','created_at' => $date,'updated_at' => $date),
+            array('kode'=> 'P03','name' => 'thypoid','created_at' => $date,'updated_at' => $date),
         );
         Penyakit::insert($penyakit);
     }
