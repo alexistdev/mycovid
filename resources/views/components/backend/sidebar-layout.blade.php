@@ -49,10 +49,10 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="../gallery.html" class="nav-link">
+                            <a href="{{route('admin.rule')}}" class="nav-link {{($tagSubMenu == 'rule')?"active":"";}}">
                                 <i class="nav-icon fa fa-clipboard-list"></i>
                                 <p>
-                                    DATA PRODUK
+                                    DATA RULE
                                 </p>
                             </a>
                         </li>

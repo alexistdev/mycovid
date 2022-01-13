@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Admin\{DashboardController as DashAdmin,PenyakitController as PenyAdmin,GejalaController as GejAdmin};
+use App\Http\Controllers\Admin\{DashboardController as DashAdmin,PenyakitController as PenyAdmin,GejalaController as GejAdmin,RuleController as RuleAdmin};
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +23,8 @@ Route::get('/dashboard', function () {
 Route::group(['middleware' => ['web','auth','roles']],function() {
     Route::group(['roles' => 'admin'], function () {
         Route::get('/admin/dashboard', [DashAdmin::class, 'index'])->name('admin.dashboard');
+
+        Route::get('/admin/rule', [RuleAdmin::class, 'index'])->name('admin.rule');
 
         Route::get('/admin/gejala', [GejAdmin::class, 'index'])->name('admin.gejala');
         Route::post('/admin/gejala', [GejAdmin::class, 'store'])->name('admin.savegejala');
