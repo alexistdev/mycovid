@@ -53,14 +53,23 @@
     <string name="alamat">Jl. ZA. Pagar Alam No.93, gedong meneng</string>
     <string name="gmbr">gambar akun</string>
 
-	<!-- DAFTAR VAKSIN	-->
-	<string-array name="gelombang_vaksin">
-		<item>Vaksin Gelombang 1</item>
-		<item>Vaksin Gelombang 2</item>
-	</string-array>
-	<string name="daftarvaksin">Daftar Vaksin</string>
-	<string name="notelp">Nomor Telepon</string>
-	<string name="panah">Icon Panah</string>
-	<string name="btn_simpan">Simpan</string>
+    <!-- DAFTAR VAKSIN	-->
+    <string-array name="gelombang_vaksin">
+        <item>Vaksin Gelombang 1</item>
+        <item>Vaksin Gelombang 2</item>
+    </string-array>
+    <string name="daftarvaksin">Daftar Vaksin</string>
+    <string name="notelp">Nomor Telepon</string>
+    <string name="panah">Icon Panah</string>
+    <string name="btn_simpan">Simpan</string>
+    <string name="title_activity_deteksi">Deteksi</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
 </resources>

@@ -14,17 +14,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DeteksiCovid"
         android:usesCleartextTraffic="true">
+       
         <activity
             android:name=".BeritaActivity"
             android:exported="true" />
         <activity
             android:name=".Detail_sertifikatvaksin"
             android:exported="true" />
-        <activity android:name=".MainActivity" />
         <activity android:name=".SplashActivity" />
-        <activity
-            android:name=".ui.Login"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <activity android:name=".berita">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
