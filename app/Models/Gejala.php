@@ -22,4 +22,8 @@ class Gejala extends Model
     {
         return ucfirst($value);
     }
+
+    public function userinput(){
+        return $this->hasOne(Userinput::class);
+    }
 }

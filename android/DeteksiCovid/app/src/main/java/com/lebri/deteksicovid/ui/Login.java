@@ -1,14 +1,12 @@
 package com.lebri.deteksicovid.ui;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import com.lebri.deteksicovid.API.APIService;
 import com.lebri.deteksicovid.MainActivity;
 import com.lebri.deteksicovid.R;
@@ -16,12 +14,11 @@ import com.lebri.deteksicovid.helper.ErrorUtils;
 import com.lebri.deteksicovid.helper.SessionHandle;
 import com.lebri.deteksicovid.model.APIError;
 import com.lebri.deteksicovid.model.UserModel;
-
 import java.util.regex.Pattern;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+import retrofit2.internal.EverythingIsNonNull;
 
 public class Login extends AppCompatActivity {
 	private EditText mEmail, mPassword;
@@ -32,7 +29,14 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         init();
+        //cek login
+        if(SessionHandle.isLoggedIn(this)){
+            Intent intent = new Intent(Login.this, MainActivity.class);
+            startActivity(intent);
+            finish();
+        }
         mLogin.setOnClickListener(v -> {
+
 			String email = mEmail.getText().toString();
 			String password = mPassword.getText().toString();
 			if(email.trim().length()> 0 && password.trim().length() >0){
@@ -52,8 +56,9 @@ public class Login extends AppCompatActivity {
 		try {
 			Call<UserModel> login = APIService.Factory.create(getApplicationContext()).cekLogin(email,password);
 			login.enqueue(new Callback<UserModel>() {
-				@Override
-				public void onResponse(Call<UserModel> call, Response<UserModel> response) {
+				@EverythingIsNonNull
+			    @Override
+				public void onResponse(@NonNull Call<UserModel> call, Response<UserModel> response) {
 					if(response.isSuccessful()) {
 						if (response.body() != null) {
 							if (SessionHandle.login(Login.this, response.body().getIdUser())){
@@ -67,7 +72,7 @@ public class Login extends AppCompatActivity {
 						pesan(error.message());
 					}
 				}
-
+				@EverythingIsNonNull
 				@Override
 				public void onFailure(Call<UserModel> call, Throwable t) {
 					pesan(t.getMessage());

@@ -18,7 +18,6 @@ class RoleSeeder extends Seeder
         $date = Carbon::now()->format('Y-m-d H:i:s');
         $role = array(
             array('name' => 'admin','created_at' => $date,'updated_at' => $date),
-            array('name' => 'toko','created_at' => $date,'updated_at' => $date),
             array('name' => 'user','created_at' => $date,'updated_at' => $date),
         );
         Role::insert($role);

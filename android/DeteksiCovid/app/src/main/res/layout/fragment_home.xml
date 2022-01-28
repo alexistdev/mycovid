@@ -98,6 +98,7 @@
 			android:weightSum="2">
 
 			<androidx.cardview.widget.CardView
+                android:id="@+id/btndeteksi"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:layout_weight="1"
@@ -109,6 +110,7 @@
 				android:backgroundTint="@color/white">
 
 				<LinearLayout
+
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
 					android:orientation="vertical"

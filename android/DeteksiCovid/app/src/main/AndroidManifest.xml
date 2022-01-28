@@ -14,15 +14,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DeteksiCovid"
         android:usesCleartextTraffic="true">
-       
+        <activity
+            android:name=".ui.Deteksi"
+            android:parentActivityName=".MainActivity"
+            android:exported="false" />
         <activity
             android:name=".BeritaActivity"
             android:exported="true" />
         <activity
             android:name=".Detail_sertifikatvaksin"
             android:exported="true" />
-        <activity android:name=".SplashActivity" />
-        <activity android:name=".berita">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ui.Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

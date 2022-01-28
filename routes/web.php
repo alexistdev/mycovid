@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\{DashboardController as DashAdmin,PenyakitController as PenyAdmin,GejalaController as GejAdmin,RuleController as RuleAdmin};
+use App\Http\Controllers\User\{DashboardController as DashUser};
 
 /*
 |--------------------------------------------------------------------------
@@ -40,7 +41,13 @@ Route::group(['middleware' => ['web','auth','roles']],function() {
         Route::patch('/admin/penyakit', [PenyAdmin::class, 'update'])->name('admin.updatepenyakit');
         Route::delete('/admin/penyakit', [PenyAdmin::class, 'destroy'])->name('admin.deletepenyakit');
         Route::get('/admin/penyakit/add', [PenyAdmin::class, 'create'])->name('admin.addpenyakit');
-        Route::get('/admin/penyakit/{id}/edit', [PenyAdmin::class, 'edit'])->name('admin.editpenyakit');
+        Route::get('/admin/penyakit/{id}/edit', [DashAdmin::class, 'edit'])->name('admin.editpenyakit');
+
+        Route::get('/admin/test', [DashAdmin::class, 'test'])->name('admin.test');
+    });
+
+    Route::group(['roles' => 'user'], function () {
+        Route::get('/user/dashboard', [DashUser::class, 'index'])->name('user.dashboard');
     });
 });
 

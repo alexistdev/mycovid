@@ -9,7 +9,7 @@ class Penyakit extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'name'
+        'name','kode'
     ];
 
     public function setNameAttribute($value)

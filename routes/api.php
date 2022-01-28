@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Api\{AuthController as AuthApi};
+use App\Http\Controllers\Api\{AuthController as AuthApi,DeteksiController as DetApi};
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +19,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('login', [AuthApi::class, 'validasi_login']);
+Route::post('/login', [AuthApi::class, 'validasi_login']);
+Route::get('/gejala', [DetApi::class, 'get_gejala']);
+Route::post('/gejala', [DetApi::class, 'simpan_jawaban']);

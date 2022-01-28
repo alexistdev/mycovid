@@ -32,8 +32,8 @@
                         <thead>
                             <tr>
                                 <th>No.</th>
-                                <th>Nama Penyakit</th>
                                 <th>Nama Gejala</th>
+                                <th>Nama Penyakit</th>
                                 <th>Nilai CF</th>
                                 <th>Dibuat</th>
                                 <th>Action</th>

@@ -3,7 +3,7 @@ package com.lebri.deteksicovid.model;
 import com.google.gson.annotations.SerializedName;
 
 public class UserModel {
-	@SerializedName("id_user")
+	@SerializedName("id")
 	private final String idUser;
 	@SerializedName("email")
 	private final String email;

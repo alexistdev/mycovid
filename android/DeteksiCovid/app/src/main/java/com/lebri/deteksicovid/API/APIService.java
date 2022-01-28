@@ -4,6 +4,7 @@ import android.content.Context;
 
 import com.lebri.deteksicovid.BuildConfig;
 import com.lebri.deteksicovid.config.Constants;
+import com.lebri.deteksicovid.model.PertanyaanModel;
 import com.lebri.deteksicovid.model.UserModel;
 
 import java.util.concurrent.TimeUnit;
@@ -15,8 +16,10 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
+import retrofit2.http.GET;
 import retrofit2.http.Headers;
 import retrofit2.http.POST;
+import retrofit2.http.Query;
 
 public interface APIService {
 	/* Otentikasi Login */
@@ -24,6 +27,10 @@ public interface APIService {
 	@POST("api/login")
 	Call<UserModel> cekLogin(@Field("email") String email,
 							 @Field("password") String password);
+
+    /* Dapat pertanyaan Gejala */
+    @GET("api/gejala")
+    Call<PertanyaanModel> dataPertanyaan(@Query("id") String idUser);
 
 	class Factory{
 		public static APIService create(Context mContext){
