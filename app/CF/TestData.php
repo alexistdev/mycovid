@@ -46,7 +46,7 @@ class TestData
 //        $arr[2]['nama_rule'] = "Demam";
 ////        $arr[2]['nilai_mb'] = 0.75;
 //        $arr[2]['nilai_md'] = 0.2;
-
+//
 //        $arr[3]['kode_case'] = "P01";
 //        $arr[3]['nama_case'] = "Anemia Aplastik";
 //        $arr[3]['kode_rule'] = "G05";
@@ -67,14 +67,14 @@ class TestData
 //        $arr[5]['nama_rule'] = "Nyeri pada ulu hati";
 ////        $arr[5]['nilai_mb'] = 0.8;
 //        $arr[5]['nilai_md'] = 0.3;
-
+//
 //        $arr[6]['kode_case'] = "P01";
 //        $arr[6]['nama_case'] = "Anemia Aplastik";
 //        $arr[6]['kode_rule'] = "G08";
 //        $arr[6]['nama_rule'] = "Kulit tampak pucat";
 ////        $arr[6]['nilai_mb'] = 0.65;
 //        $arr[6]['nilai_md'] = 0.3;
-
+//
 //// Anemia Defisiensi Zat besi
 //        $arr[3]['kode_case'] = "P02";
 //        $arr[3]['nama_case'] = "Anemia Defisiensi Zat besi";

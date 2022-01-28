@@ -13,9 +13,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:textSize="20sp"
-        android:layout_marginStart="12sp"
-        android:layout_marginEnd="12sp"
-        android:text="Apakah anda merasakan: Demam ?"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:text="pertanyaan"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,12 +55,36 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_gayakin" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btn_ulangi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="144dp"
-        android:text="SELANJUTNYA"
+        android:text="ULANGI"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_tidak" />
+
+    <TextView
+        android:id="@+id/txt_penyakit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:visibility="gone"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_pertanyaan" />
+
+    <TextView
+        android:id="@+id/txt_prosentase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="TextView"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_penyakit" />
 </androidx.constraintlayout.widget.ConstraintLayout>

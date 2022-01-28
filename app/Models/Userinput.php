@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Userinput extends Model
 {
     use HasFactory;
+
+    public function gejala()
+    {
+        return $this->belongsTo(Gejala::class);
+    }
 }

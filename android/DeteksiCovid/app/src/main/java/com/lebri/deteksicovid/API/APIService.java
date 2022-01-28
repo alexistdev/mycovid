@@ -4,6 +4,7 @@ import android.content.Context;
 
 import com.lebri.deteksicovid.BuildConfig;
 import com.lebri.deteksicovid.config.Constants;
+import com.lebri.deteksicovid.model.HasildeteksiModel;
 import com.lebri.deteksicovid.model.PertanyaanModel;
 import com.lebri.deteksicovid.model.UserModel;
 
@@ -14,6 +15,7 @@ import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
+import retrofit2.http.DELETE;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
@@ -28,9 +30,25 @@ public interface APIService {
 	Call<UserModel> cekLogin(@Field("email") String email,
 							 @Field("password") String password);
 
+    /* Fitur Ulangi */
+    @DELETE("api/user/gejala")
+    Call<HasildeteksiModel> hapusData(@Query("id_user") String idUser);
+
+
     /* Dapat pertanyaan Gejala */
     @GET("api/gejala")
     Call<PertanyaanModel> dataPertanyaan(@Query("id") String idUser);
+
+    /* Dapat hasil deteksi */
+    @GET("api/hasil")
+    Call<HasildeteksiModel> datahasil(@Query("id_user") String idUser);
+
+    /* menyimpan jawaban Gejala */
+    @FormUrlEncoded
+    @POST("api/gejala")
+    Call<PertanyaanModel> simpanJawaban(@Field("id_user") String idUser,
+                                           @Field("gejala_id") int idGejala,
+                                           @Field("cf") String cfUser);
 
 	class Factory{
 		public static APIService create(Context mContext){

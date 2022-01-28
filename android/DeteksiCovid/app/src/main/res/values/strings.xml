@@ -46,9 +46,9 @@
 
     <!-- Fragment_Akun	-->
     <string name="dtl_akun">Detail Akun :</string>
-    <string name="nama_akun">Richo Vernando</string>
-    <string name="telp_akun">08979073353</string>
-    <string name="email_akun">Richo@gmail.com</string>
+    <string name="nama_akun">User</string>
+    <string name="telp_akun">08123456789</string>
+    <string name="email_akun">user@gmail.com</string>
     <string name="text_alamat">Alamat</string>
     <string name="alamat">Jl. ZA. Pagar Alam No.93, gedong meneng</string>
     <string name="gmbr">gambar akun</string>

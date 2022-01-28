@@ -133,6 +133,7 @@
 			</androidx.cardview.widget.CardView>
 
 			<androidx.cardview.widget.CardView
+                android:id="@+id/cd_jadwalvaksin"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:layout_weight="1"
@@ -171,6 +172,7 @@
 			android:weightSum="2">
 
 			<androidx.cardview.widget.CardView
+                android:id="@+id/cd_daftarvaksin"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:layout_weight="1"
@@ -202,6 +204,7 @@
 			</androidx.cardview.widget.CardView>
 
 			<androidx.cardview.widget.CardView
+                android:id="@+id/cd_informasi"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:layout_weight="1"

@@ -14,13 +14,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.lebri.deteksicovid.DaftarVaksin;
 import com.lebri.deteksicovid.R;
 import com.lebri.deteksicovid.config.Constants;
 import com.lebri.deteksicovid.ui.Deteksi;
+import com.lebri.deteksicovid.ui.Informasi;
+import com.lebri.deteksicovid.ui.Jadwalvaksin;
 
 
 public class home_fragment extends Fragment {
-    private CardView mDeteksi;
+    private CardView mDeteksi,mJadwalVaksin,mInformasi,mDaftarVaksin;
     private ProgressDialog pDialog;
 
     @Override
@@ -43,6 +46,27 @@ public class home_fragment extends Fragment {
                 startActivity(intent);
             }
         });
+        mJadwalVaksin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), Jadwalvaksin.class);
+                startActivity(intent);
+            }
+        });
+        mInformasi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), Informasi.class);
+                startActivity(intent);
+            }
+        });
+        mDaftarVaksin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), DaftarVaksin.class);
+                startActivity(intent);
+            }
+        });
         return myview;
     }
 
@@ -50,6 +74,9 @@ public class home_fragment extends Fragment {
 
     public void init(View view){
         mDeteksi = view.findViewById(R.id.btndeteksi);
+        mJadwalVaksin = view.findViewById(R.id.cd_jadwalvaksin);
+        mInformasi = view.findViewById(R.id.cd_informasi);
+        mDaftarVaksin = view.findViewById(R.id.cd_daftarvaksin);
         pDialog = new ProgressDialog(getContext());
         pDialog.setCancelable(false);
         pDialog.setMessage("Loading.....");

@@ -43,17 +43,7 @@ class CertaintyFactor
                 }
             }
             $hasilcombin = 0;
-//            echo dd($kombin);
-
             for ($z=0; $z < count($kombin); $z++) {
-//                if ($z+1 == count($kombin)) {
-//                        $hasil_combine[$i]["kode_case"] = $getcase[$i]['kode_case'];
-//                        $hasil_combine[$i]["nama_case"] = $getcase[$i]['nama_case'];
-//                        $hasil_combine[$i]["hasil_perhitungan"] = $hasilcombin;
-//                        break;
-//                    }
-//                $hasilcombin = $hasilcombin + $kombin[$z+1] * ( 1.0 - $hasilcombin );
-
                 if ($z == 0) {
                     $hasilcombin = $kombin[$z] + $kombin[$z+1] * (1.0 - $kombin[$z]);
 
@@ -93,7 +83,6 @@ class CertaintyFactor
         ];
 
         return $hasilakhir;
-        // echo json_encode($hasilakhir);
     }
 
 }

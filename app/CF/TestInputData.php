@@ -3,13 +3,25 @@
 namespace App\CF;
 
 
+use App\Models\Rule;
+use App\Models\Userinput;
+
 class TestInputData
 {
     public function testinput()
     {
-        $arr = [];
-//        $arr[0]['kode_rule'] = "G01";
-//        $arr[0]['persentase_user'] = 0.8;
+//        $arr = [];
+//
+//        $dataModel = Userinput::with('gejala')
+//            ->orderBy('gejala_id', 'ASC')
+//            ->get();
+//        $i= 0;
+//        foreach($dataModel as $row){
+//            $arr[$i]['kode_rule'] = $row->gejala->kode;
+//            $arr[$i]['persentase_user'] = $row->cf_user;
+//            $i++;
+//        }
+
 
         $arr[0]['kode_rule'] = "G01";
         $arr[0]['persentase_user'] = 0.8;

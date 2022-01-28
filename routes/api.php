@@ -22,3 +22,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::post('/login', [AuthApi::class, 'validasi_login']);
 Route::get('/gejala', [DetApi::class, 'get_gejala']);
 Route::post('/gejala', [DetApi::class, 'simpan_jawaban']);
+Route::delete('/user/gejala', [DetApi::class, 'hapus_gejala'])->name('delete');
+Route::get('/hasil', [DetApi::class, 'get_hasil']);

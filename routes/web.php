@@ -15,7 +15,9 @@ use App\Http\Controllers\User\{DashboardController as DashUser};
 |
 */
 
-Route::redirect('/', '/login');
+Route::get('/', function () {
+    return view('welcome');
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
