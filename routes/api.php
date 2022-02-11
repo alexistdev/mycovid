@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Api\{AuthController as AuthApi,DeteksiController as DetApi};
+use App\Http\Controllers\Api\{AuthController as AuthApi,DeteksiController as DetApi,Vaksin as DaftarApi};
 
 /*
 |--------------------------------------------------------------------------
@@ -24,3 +24,5 @@ Route::get('/gejala', [DetApi::class, 'get_gejala']);
 Route::post('/gejala', [DetApi::class, 'simpan_jawaban']);
 Route::delete('/user/gejala', [DetApi::class, 'hapus_gejala'])->name('delete');
 Route::get('/hasil', [DetApi::class, 'get_hasil']);
+Route::post('/vaksin', [DaftarApi::class, 'pendaftaran']);
+Route::get('/vaksin/list', [DaftarApi::class, 'listvaksin']);

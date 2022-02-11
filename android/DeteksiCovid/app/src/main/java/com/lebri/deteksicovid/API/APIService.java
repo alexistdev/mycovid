@@ -4,9 +4,11 @@ import android.content.Context;
 
 import com.lebri.deteksicovid.BuildConfig;
 import com.lebri.deteksicovid.config.Constants;
+import com.lebri.deteksicovid.model.GetVaksin;
 import com.lebri.deteksicovid.model.HasildeteksiModel;
 import com.lebri.deteksicovid.model.PertanyaanModel;
 import com.lebri.deteksicovid.model.UserModel;
+import com.lebri.deteksicovid.model.VaksinModel;
 
 import java.util.concurrent.TimeUnit;
 
@@ -42,6 +44,18 @@ public interface APIService {
     /* Dapat hasil deteksi */
     @GET("api/hasil")
     Call<HasildeteksiModel> datahasil(@Query("id_user") String idUser);
+
+    /* Dapat pendaftaran vaksin */
+    @GET("api/vaksin/list")
+    Call<GetVaksin> dataVaksin(@Query("user_id") String idUser);
+
+    /* Daftar Vaksin */
+    @FormUrlEncoded
+    @POST("api/vaksin")
+    Call<VaksinModel> daftarVaksin(@Field("user_id") String idUser,
+                                    @Field("nama_lengkap") String namaLengkap,
+                                    @Field("nik") String nik,
+                                   @Field("phone") String phone);
 
     /* menyimpan jawaban Gejala */
     @FormUrlEncoded

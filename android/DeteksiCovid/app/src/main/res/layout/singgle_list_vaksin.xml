@@ -23,6 +23,7 @@
 		android:layout_height="wrap_content"
 		android:orientation="vertical">
 		<TextView
+            android:id="@+id/txt_nama"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:text="nama : robert kiyosi"
@@ -30,9 +31,10 @@
 			android:textSize="24sp"
 			/>
 		<TextView
+            android:id="@+id/txt_tanggal"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:text="nama sertifikat : vaksin periode 1"
+			android:text="tanggal daftar: 01-01-2022"
 			android:textColor="@color/black"
 			android:textSize="18sp"/>
 	</LinearLayout>
