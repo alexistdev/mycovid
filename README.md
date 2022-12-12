@@ -5,6 +5,8 @@
 MyCovid adalah Aplikasi Sistem Pakar dengan Certainty Factor berbasis Android dan Webservice Laravel
 Installasi:
 
+Menggunakan library yang dikembangkan oleh [Afrizal423](https://github.com/afrizal423/afrizalm-certainty-factor). 
+
 Rest api laravel:
 
 - Git clone
